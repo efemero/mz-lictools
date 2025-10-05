@@ -199,7 +199,7 @@ class Style(enum.Enum):
         if style == Style.BATCH_STYLE:
             return Decorator(None, 'REM', None, r' ?(?:REM|::) ?')
         if style == Style.SLASH_STYLE:
-            return Decorator(None, '//', None, r' ?(?://) ?')
+            return Decorator(None, '//', None, r'^ ?(?://) ?')
         if style == Style.DASH_STYLE:
             return Decorator(None, '--', None, r' ?(?:--) ?')
         if style == Style.TRIPLE_SLASH_STYLE:
